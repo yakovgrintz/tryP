@@ -1,22 +1,13 @@
-import { useState } from 'react'
-import './App.css'
+import RouteAnalysis from './components/RouteAnalysis';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="App">
-      <h1>Vite + React + TypeScript</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
+      <h1>ניתוח מסלול</h1>
+      <RouteAnalysis />
     </div>
-  )
+  );
 }
 
-export default App 
+export default App; 
