@@ -10,5 +10,11 @@ export interface RoutePoint {
   distance: number;
 }
 
+export interface ChartDomain {
+  min: number;
+  max: number;
+}
+
 export const routeDataAtom = atom<RoutePoint[]>([]);
-export const activePointAtom = atom<RoutePoint | null>(null); 
+export const activePointAtom = atom<RoutePoint | null>(null);
+export const chartDomainAtom = atom<ChartDomain>({ min: 0, max: 100 }); 
